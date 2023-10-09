@@ -29,10 +29,16 @@
     justify-content: space-between;
     padding: 0 50px;
     border-bottom: 1px solid gray;
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.header .navbar .sf-logo {
+    width: 70px;
 }
 
 .header .navbar .logo-content {
-    width: 25%;
+    width: auto;
     display: flex;
     align-items: center;
 }
@@ -73,58 +79,169 @@
 }
 
 
+/* Why Section */
+
+.why-section {
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.why-section .title {
+    font-family: sans-serif;
+    font-weight:lighter;
+    font-size: 50px;
+    margin-right: 100px;
+    color: rgb(56, 56, 56);
+}
+
+.why-section .why-card {
+    width: 600px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
 /* Features Section  */
 
 .features {
     width: 100%;
     height: auto;
+    position: relative;
+}
+
+.features .feature-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.features .features-container {
+    width: 100%;
+    height: auto;
     padding: 50px 100px;
 }
 
-.features .features-content {
+.features .features-container {
     width: 100%;
     height: 100%;
 }
 
-.features .features-content .features-title {
-    width: 100%;
-    height: 50px;
+.features .features-container .features-header {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto 50px;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.features .features-content .features-title .title {
+.features .features-container .features-header .title {
     font-size: 25px;
     font-family: sans-serif;
     font-weight: 200;
 }
 
-.features .features-content .features-body {
+.features .features-container .features-body {
     height: calc(100% - 50px);
-    width: 100%;
+    width: auto;
     padding: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.features .features-content .features-body .feature-card {
-    width: 500px;
-    height: 400px;
+.features .features-container .features-body .feature-card {
+    width: 450px;
+    height: 350px;
     border: 1px solid gray;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     border-radius: 10px;
     padding: 30px;
+    background-color: white;
+    opacity: 0.9;
 }
 
-.features .features-content .features-body .feature-card .card-header {
+.features .features-container .features-body .feature-card .card-header {
     width: 100%;
     height: auto;
 }
 
-.features .features-content .features-body .feature-card .card-header .feature-text {
+.features .features-container .features-body .feature-card .card-header .feature-text {
     font-family: sans-serif;
     display: block;
     line-height: 25px;
     text-align: center;
+}
+
+.features .features-container .features-footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.features .features-container .features-footer .title {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+.features .features-container .features-body .feature-card .card-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.features .features-container .features-body .feature-card .card-body .card-img {
+    width: 75%;
+    margin-top: 25px;
+}
+
+
+/* Footer  */
+
+footer {
+    background-color: #ffffff;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+footer .container {
+    display: flex;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .footer-logo {
+    width: 50px;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+footer .contact-info .link {
+    text-decoration: none;
+    margin-left: 5px;
+    color: rgb(69, 69, 69);
 }

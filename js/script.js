@@ -1,14 +1,28 @@
 function initializeEvents() {
     const navbar = document.querySelector('.navbar');
+    const headerImg = document.querySelector('.header-img');
+    var lastScroll = 0;
     window.addEventListener("scroll", () => {
+        let currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
+
         if (window. scrollY != 0){
-            // navbar.style.backgroundColor = 'black'
             navbar.style.opacity = '0.2';
+            headerImg.style.marginTop = '0';
+            navbar.style.transform = 'translateY(-80px)';
         } else {
             navbar.style.opacity = '1';
-            navbar.style.backgroundColor = 'white'
+            headerImg.style.marginTop = '80px';
+            navbar.style.transform = 'translateY(0)';
         }
-    })
+
+        if (currentScroll > 0 && lastScroll <= currentScroll){
+            lastScroll = currentScroll;
+        } else{
+            lastScroll = currentScroll;
+            navbar.style.transform = 'translateY(0)';
+            navbar.style.opacity = '1';
+        }
+    });
 }
 
 initializeEvents();
