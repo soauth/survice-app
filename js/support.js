@@ -20,7 +20,7 @@ function initializeEvents() {
         if (window. scrollY != 0){
             navbar.style.opacity = '0.2';
             navbar.style.transform = 'translateY(-80px)';
-            navItems.style.display = 'none';
+            // navItems.style.display = 'none';
         } else {
             navbar.style.opacity = '1';
             navbar.style.transform = 'translateY(0)';

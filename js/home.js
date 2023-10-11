@@ -20,7 +20,7 @@ function initializeEvents() {
             navbar.style.opacity = '0.2';
             headerImg.style.marginTop = '0';
             navbar.style.transform = 'translateY(-80px)';
-            navItems.style.display = 'none';
+            // navItems.style.display = 'none';
 
         } else {
             navbar.style.opacity = '1';
