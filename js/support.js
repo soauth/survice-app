@@ -2,11 +2,16 @@ function initializeEvents() {
     const navbar = document.querySelector('.navbar');
     const headerImg = document.querySelector('.img-section');
     const header = document.querySelector('.header');
+    const navItems = document.querySelector(".nav-items");
+    const toggle = document.querySelector(".fa-bars");
     var lastScroll = 0;
 
-    window.addEventListener("load", () => {
-        const imgHeight = headerImg.offsetHeight;
-        header.style.height = String(imgHeight) + 'px';
+    toggle.addEventListener("click", () => {
+        if (navItems.style.display == 'none') {
+            navItems.style.display = 'flex';
+        } else {
+            navItems.style.display = 'none';
+        }
     });
 
     window.addEventListener("scroll", () => {
@@ -14,11 +19,10 @@ function initializeEvents() {
 
         if (window. scrollY != 0){
             navbar.style.opacity = '0.2';
-            headerImg.style.marginTop = '0';
             navbar.style.transform = 'translateY(-80px)';
+            navItems.style.display = 'none';
         } else {
             navbar.style.opacity = '1';
-            headerImg.style.marginTop = '80px';
             navbar.style.transform = 'translateY(0)';
         }
 
