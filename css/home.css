@@ -320,7 +320,7 @@ footer .contact-info .link {
     }
 
 
-    /* Navbar  */
+    /* Header  */
 
     .header .navbar {
         flex-direction: column;
@@ -393,6 +393,15 @@ footer .contact-info .link {
         justify-content: center;
         font-family: sans-serif;
         color: gray;
+    }
+
+    /* Footer  */
+
+    footer .contact-info {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
     }
     
 }
