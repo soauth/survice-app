@@ -2,8 +2,14 @@ function initializeEvents() {
     const navbar = document.querySelector('.navbar');
     const navItems = document.querySelector(".nav-items");
     const toggle = document.querySelector(".fa-bars");
+    const header = document.querySelector(".header");
     const headerImg = document.querySelector('.header-img');
     var lastScroll = 0;
+
+    window.addEventListener("load", () => {
+        console.log(445);
+        header.style.height = String(headerImg.offsetHeight) + 'px';
+    });
 
     toggle.addEventListener("click", () => {
         if (navItems.style.display == 'none') {
