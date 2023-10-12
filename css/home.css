@@ -20,7 +20,6 @@
     margin-top: 80px;
     width: 100%;
     height: auto;
-    border-bottom: 1px solid white;
 }
 
 .header .navbar {
@@ -92,7 +91,7 @@
     width: 100%;
     height: 500px;
     background: linear-gradient(180deg, rgba(101,1,150,1) 0%, rgba(190,91,191,1) 54%, rgba(231,181,245,1) 100%);
-    border-bottom: 1px solid white;
+    border-bottom: 4px solid white;
 }
 
 .support-section .support-content {
@@ -251,6 +250,7 @@ footer p {
     display: flex;
     align-items: center;
     font-family: sans-serif;
+    text-align: center;
 }
 
 footer .container {
@@ -434,6 +434,9 @@ footer .contact-info .link {
 }
 
 @media screen and (max-width:500px) {
+     .support-section {
+        height: 400px;
+    }
      .support-section .support-content {
         width: 350px;
         height: 200px;

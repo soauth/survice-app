@@ -8,7 +8,7 @@ function initializeEvents() {
 
     window.addEventListener("load", () => {
         console.log(445);
-        header.style.height = String(headerImg.offsetHeight) + 'px';
+        // header.style.height = String(headerImg.offsetHeight) + 'px';
     });
 
     toggle.addEventListener("click", () => {
@@ -26,13 +26,13 @@ function initializeEvents() {
             navbar.style.opacity = '0.2';
             headerImg.style.marginTop = '0';
             navbar.style.transform = 'translateY(-80px)';
-            header.style.height = String(headerImg.offsetHeight) + 'px';
+            // header.style.height = String(headerImg.offsetHeight) + 'px';
 
         } else {
             navbar.style.opacity = '1';
             headerImg.style.marginTop = '80px';
             navbar.style.transform = 'translateY(0)';
-            header.style.height = String(headerImg.offsetHeight + navbar.offsetHeight) + 'px';
+            // header.style.height = String(headerImg.offsetHeight + navbar.offsetHeight) + 'px';
         }
 
         if (currentScroll > 0 && lastScroll <= currentScroll){
