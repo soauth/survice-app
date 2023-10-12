@@ -303,6 +303,7 @@ footer .contact-info .link {
         display: flex;
         align-items: center;
         margin-top: 20px;
+        text-align: center;
     }
 }
 
