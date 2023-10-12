@@ -26,12 +26,13 @@ function initializeEvents() {
             navbar.style.opacity = '0.2';
             headerImg.style.marginTop = '0';
             navbar.style.transform = 'translateY(-80px)';
-            // navItems.style.display = 'none';
+            header.style.height = String(headerImg.offsetHeight) + 'px';
 
         } else {
             navbar.style.opacity = '1';
             headerImg.style.marginTop = '80px';
             navbar.style.transform = 'translateY(0)';
+            header.style.height = String(headerImg.offsetHeight + navbar.offsetHeight) + 'px';
         }
 
         if (currentScroll > 0 && lastScroll <= currentScroll){

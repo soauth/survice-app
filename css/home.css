@@ -20,6 +20,7 @@
     margin-top: 80px;
     width: 100%;
     height: auto;
+    border-bottom: 1px solid white;
 }
 
 .header .navbar {
@@ -118,7 +119,6 @@
     font-family: sans-serif;
     margin-top: 20px;
     font-weight: 400;
-    /* color: white; */
 }
 
 .support-section .support-content .text {
@@ -126,7 +126,6 @@
     font-family: sans-serif;
     margin-top: 30px;
     font-style: italic;
-    /* color: white; */
 }
 
 .support-section .support-content .btn-blue {
@@ -290,13 +289,9 @@ footer .contact-info .link {
 
 @media screen and (max-width:799px) {
      .support-section .support-content {
-        position: absolute;
         width: 500px;
         height: 180px;
         background-color: white;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         border-radius: 8px;
         padding: 20px;
         display: flex;
@@ -411,7 +406,7 @@ footer .contact-info .link {
         justify-content: center;
     }
 
-    .header .navbar .nav-items .nav-item:nth-child(2), .nav-item:nth-child(1) {
+    .header .navbar .nav-items .nav-item:nth-child(1) {
         border-bottom: 1px solid lightgray;
     }
 
@@ -440,13 +435,9 @@ footer .contact-info .link {
 
 @media screen and (max-width:500px) {
      .support-section .support-content {
-        position: absolute;
         width: 350px;
         height: 200px;
         background-color: white;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         border-radius: 8px;
         padding: 20px;
         display: flex;
